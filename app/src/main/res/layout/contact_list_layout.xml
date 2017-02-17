@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_relative_layoutc"
+    android:layout_width="match_parent"
+    android:layout_height="72dp" >
+
+    <View
+        android:id="@+id/ripple_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ripple" />
+
+    <RelativeLayout
+        android:id="@+id/contact_image_layoutc"
+        android:layout_width="72dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true" >
+        
+        <com.notefy.activity.CircleImageView
+            android:id="@+id/contact_image_imagec"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            app:border_color="@android:color/transparent"
+            app:border_width="0dp" />
+        
+        <TextView
+            android:id="@+id/contact_image_textc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/primary_list_itemc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingEnd="64dp"
+        android:paddingLeft="72dp"
+        android:paddingRight="64dp"
+        android:paddingStart="72dp" >
+
+        <TextView
+            android:id="@+id/contact_namec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contact_idc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/black"
+        android:textSize="0sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_grey" />
+
+</RelativeLayout>

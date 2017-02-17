@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="notefy_app_name">NotefY</string>
+    <string name="save">Save</string>
+    <string name="add_new_remainder">ADD</string>
+    <string name="dismiss_dialog">Dismiss</string>
+    <string name="yes_option">YES</string>
+    <string name="no_option">NO</string>
+    <string name="dismiss_and_delete_dialog">Dismiss And Delete</string>
+    <string name="skip_help">SKIP HELP</string>
+    <string name="no_messages">You have no notifications set!</string>
+    <string name="instruction"><i>Start setting notifications by clicking the Plus (+) button in the bottom of the screen.</i></string>
+    <string name="no_contacts">You have no Contacts!</string>
+    <string name="contact_instruction"><u><i>Click to Add Contact</i></u></string>
+    <string name="contact_list_lable">Select Contact</string>
+    <string name="search_contact">Search Contact&#8230;</string>
+    <string name="no_contact_list_lable">No Contacts</string>
+    <string name="add_remainder_lable">Add Notification For</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">About</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="enable_tracking">Enable NotefY</string>
+    <string name="general_setting">General Settings</string>
+    <string name="alert">Alert Dialog (Recommended)</string>
+    <string name="notification">Notification Message</string>
+    <string name="toast">Toast Message</string>
+    <string name="alert_settings">Alert Settings</string>
+    <string name="play_sound">Play Sound</string>
+    <string name="enable_vibrate">Vibrate On Notification</string>
+    <string name="select_contact">Select Contact</string>
+    <string name="delete_confirmation">Delete Remainder(s)?</string>
+    <string name="message">Message</string>
+    <string name="copyright_message">Copyright © 2017 NotefY. All rights reserved.</string>
+	<string name="notefy_mail">Mail us at: gokulnath.aws@gmail.com</string>
+	
+</resources>
