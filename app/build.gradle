@@ -1,11 +1,12 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.triplet.play'
 
 def appVersionName() {
-    return "1.2"
+    return "1.3"
 }
 
 def appVersionCode() {
-    return 4
+    return 5
 }
 
 android {
@@ -58,6 +59,12 @@ android {
             // Prod build
         }
     }
+}
+
+play {
+    serviceAccountEmail = 'publisher-notefy@api-7294608859948737103-137357.iam.gserviceaccount.com'
+    pk12File = file('3f1f5ccb0480.p12')
+    track = 'alpha' // 'production', 'rollout', 'beta', 'alpha'
 }
 
 dependencies {
