@@ -1,5 +1,13 @@
 apply plugin: 'com.android.application'
 
+def appVersionName() {
+    return "1.2"
+}
+
+def appVersionCode() {
+    return 4
+}
+
 android {
     compileSdkVersion 25
     buildToolsVersion "23.0.3"
@@ -8,13 +16,36 @@ android {
         applicationId "com.notefy"
         minSdkVersion 16
         targetSdkVersion 21
-        versionCode 4
-        versionName "1.2"
+        versionCode appVersionCode()
+        versionName appVersionName()
+        setProperty("archivesBaseName", "NotefY")
     }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.outputFile = new File(
+                    output.outputFile.parent,
+                    output.outputFile.name.replace(".apk", "-${variant.versionName}-${variant.versionCode}.apk"))
+        }
+    }
+
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        dev {
+            // Dev build
+        }
+
+        uat {
+            // UAT build
+        }
+
+        prod {
+            // Prod build
         }
     }
 }
