@@ -21,6 +21,15 @@ android {
         setProperty("archivesBaseName", "NotefY")
     }
 
+    signingConfigs {
+        release {
+            storeFile file("notefy_key")
+            storePassword "N0tefy@123"
+            keyAlias "NotefY"
+            keyPassword "N0tefy@123"
+        }
+    }
+
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             output.outputFile = new File(
@@ -33,6 +42,7 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
     productFlavors {
