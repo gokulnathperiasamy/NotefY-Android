@@ -9,6 +9,6 @@ dependencies:
 test:
     override:
         #assemble the apk if tests were successful
-        - ./gradlew clean assembleDebug -PdisablePreDex
+        - ./gradlew clean assemble -PdisablePreDex
         # copy the test results to the test results directory.
         - cp -r app/build/outputs $CIRCLE_ARTIFACTS
