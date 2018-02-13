@@ -1,4 +1,4 @@
-# NotefY [![CircleCI](https://circleci.com/gh/gokulnathperiasamy/NotefY/tree/master.svg?style=shield)](https://circleci.com/gh/gokulnathperiasamy/NotefY/tree/master)
+# NotefY [![CircleCI](https://circleci.com/gh/gokulnathperiasamy/NotefY/tree/master.svg?style=shield)](https://circleci.com/gh/gokulnathperiasamy/NotefY-Android/tree/master)
 
 ##### NotefY is a utility app, which can be used to set a note for a contact, so that you get NotefYed while a call is made or received.
 
