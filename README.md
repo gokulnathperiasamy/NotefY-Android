@@ -13,7 +13,7 @@
 
 #### Google Play Store Link: https://play.google.com/store/apps/details?id=com.notefy
 
-#### CircleCI Build Automation: https://circleci.com/gh/gokulnathperiasamy/NotefY
+#### CircleCI Build Automation: https://circleci.com/gh/gokulnathperiasamy/NotefY-Android
 
 #### Author
 
